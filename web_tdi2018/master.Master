@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.master.cs" Inherits="web_tdi2018.master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        header{
+            width:100%;
+            height:25px;
+            align-content:center;
+            background-color:lightgray
+        }
+        ul{
+            list-style-type:none;
+            display:inline;
+        }
+        li{
+            display:inline-block;
+            margin-left:20px;
+        }
+        #un{
+            position:absolute;
+            top:0;
+            right:0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li>S'inscrire pour devenir conducteur</li>
+            <li>Help</li>
+            <li>About</li>
+            <li>FAQ</li>
+        </ul>
+        <asp:Label ID="un" runat="server" Text=""></asp:Label>
+    </header>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
